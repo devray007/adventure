@@ -2,3 +2,9 @@
 LIb/
 Scripts/
 pyvenv.cfg
+
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
