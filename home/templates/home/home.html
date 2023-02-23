@@ -1,29 +1,47 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventure Travel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href={% static 'home/css/style.css'%}>
-
-</head>
+{% include 'global/index.html' %}
 <body>
-    <header class="container-fluid">
-        <div>
-            <h1>Adventure Travel</h1>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Gallery</li>
-                    <li>Plans</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
+
+    {% include 'global/partials/header.html' %}
+
+    <main>
+        <section>
+            <div>
+                <h2 id="div__h2_01" > Adventure Travel </h2>
+                <h2 id="div__h2_02" > Connecting you to your dreams! </h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perferendis accusamus natus commodi eligendi explicabo minima nam consequuntur, hic soluta.</p>
+            </div>
+        </section>
+        <article>
+            <div>
+                <h2 id="div__h2_03" > Active People </h2>
+                <h2 id="div__h2_04" > Who we are? </h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perferendis accusamus natus commodi eligendi explicabo minima nam consequuntur, hic soluta.</p>
+            </div>
+        </article>
+    </main>
+    <address class="container address__space" >
+        <div class="row" >
+            <div class="col" >
+                <h3>
+                    <i class="bi bi-envelope" ></i>
+                    E-MAIL
+                </h3>
+                
+                <span>contact@adventuretravel.com</span>
+            </div>
+            <div class="col" >
+                <h3>
+                    <i class="bi bi-telephone" ></i>
+                    PHONES
+                </h3>
+                <span>(14)9 9999.8888 | (14)9 9898.8787</span>
+            </div>
         </div>
-    </header>
+    </address>
+
+    {% include 'global/partials/footer.html' %}
+    
 </body>
 </html>

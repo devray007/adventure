@@ -2,6 +2,7 @@
 LIb/
 Scripts/
 pyvenv.cfg
+base_statics/global/image/bootstrap-icons/
 
 # Django #
 *.log
